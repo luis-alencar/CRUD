@@ -1,6 +1,6 @@
 ﻿<?php error_reporting(E_ALL ^E_NOTICE);
 require_once("config.php");
-require_once("editora_funcoes.php");
+require_once("Calouradas_funcoes.php");
 ?>
 
 <FORM ACTION="Calouradas_salvar.php" METHOD="POST">
