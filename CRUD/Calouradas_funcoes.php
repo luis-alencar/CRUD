@@ -60,7 +60,7 @@
 	}
 	
 	
-	//recebe a conexao com o banco de dados e uma matriz com os dados que devem ser salvos
+	//recebe a conexao com o banco de dados e uma matriz com os dados que devem ser salvos.
 	function Calouradas_salvar($bd,$dados){
 		//print_r($dados);
 		$dados = Calouradas_preparar_dados($dados);
