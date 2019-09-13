@@ -1,10 +1,11 @@
 body{
 
     background: #836FFF;
+     background: linear-gradient(to right, #836FFF,rgb(12, 5, 61) ); /*FUndo com duas cores */
     font-style: none;
     color: aliceblue;
     font-family: 'Montserrat', sans-serif;
-    text-align: center;
+    text-align: center; /*Centralizar */
 }
 a{
     font-size: 30px;
@@ -21,9 +22,35 @@ img{
     position: relative;
   }
 
-.imagem_form{
-    width: 60px;
-    height: 60px;
-    float: center;
-    position: relative;
+#imagem_form img {
+    
+    max-width: 100%;
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    /* align-items: center; */
 }
+.radio-group input[type="radio"]{
+    display: none;
+}
+#imagem-form img:hover{
+    color: #836FFF;
+    transform: 
+}
+#btn-back{
+    float: left;
+    color: black;
+    margin-left: 15px;
+    border-radius: 10px;
+}
+input{
+    color: black;
+    border-radius: 5px; 
+}
+strong{
+    font-size: 20pt;
+    padding-bottom: 15px;
+}
+
+
+
