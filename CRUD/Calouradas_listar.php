@@ -5,12 +5,17 @@
 	?>
 
 <html>
+<div class="container"></div>
+<input id="btn-back" type="button" value="Voltar" onClick="history.go(-1)"> 
+
+<h1>Lista de Calouradas</h1><BR/><br/>
+</div>
+
 	<head>
 		<title>Sistema de Calouradas</title>
 	</head>
 	<body>
 		<?=get_mensagem($mensagem)?> 			
-		<h1>Lista de Calouradas</h1>
 		<table border=1 cellspacing=0 cellpadding=5>
 			<tr>
 				<th>Atletica</th>
