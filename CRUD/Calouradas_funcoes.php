@@ -1,6 +1,11 @@
-﻿<?php
+﻿
+<body>
+<link rel="stylesheet" href="style.css">
+</body>
 
-	require_once("Calouradas_funcoes.php");
+<?php
+
+require_once("Calouradas_funcoes.php");
 	
 	//função para retornar um result com listagem de todos os Calouradas.
 	function Calouradas_listar_todos($bd){

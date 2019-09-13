@@ -1,0 +1,29 @@
+body{
+
+    background: #836FFF;
+    font-style: none;
+    color: aliceblue;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+a{
+    font-size: 30px;
+    list-style: none;
+    text-decoration:none;
+}
+b{
+    font-size: 20px;
+}
+img{
+    width: 600px;
+    height: 600px;
+    float: left;
+    position: relative;
+  }
+
+.imagem_form{
+    width: 60px;
+    height: 60px;
+    float: center;
+    position: relative;
+}
