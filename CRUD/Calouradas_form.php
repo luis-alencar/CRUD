@@ -13,29 +13,28 @@ require_once("Calouradas_funcoes.php");
 </div>
 <div class="container">
 	<div class="radio-group">
-		<input type="radio" name="imagem" id="i1" />
+		<input type="radio" name="imagem" <?=$dados['Atletica']?> />
 		<label class="radio" id="imagem_form" for="i1"><img src="img/mitologica.png" alt=""></label>
-		<input type="radio" name="imagem" id="i2" />
+		<input type="radio" name="imagem" <?=$dados['Atletica']?> />
 		<label class="radio" id="imagem_form" for="i2"><img src="img/sistematica.jpg" alt=""></label>
-		<input type="radio" name="imagem" id="i3" />
+		<input type="radio" name="imagem" <?=$dados['Atletica']?> />
 		<label class="radio" id="imagem_form" for="i3"><img src="img/civilizada.jpg" alt=""></label>
 	</div>
 </div>
+<BR/>Data:&nbsp;&nbsp;
 	<?=get_mensagem($mensagem)?>
-	<INPUT TYPE="date" NAME="DATA" VALUE="<?=$dados['Data']?>">
+	<INPUT TYPE="date" NAME="Data" VALUE="<?=$dados['Data']?>">
 	
-	<BR/>Atletica:<BR/>
-	<INPUT TYPE="text" NAME="TEMA" VALUE="<?=$dados['Tema']?>">
-	
+	&nbsp;&nbsp;Hora:&nbsp;&nbsp;
+	<INPUT TYPE="time" NAME="Hora" VALUE="<?=$dados['Hora']?>">
+
 	<BR/>Tema:<BR/>
-	<INPUT TYPE="TEXT" NAME="Hora" VALUE="<?=$dados['Hora']?>">
-	
-	<BR/>Tema:<BR/>
+	<INPUT TYPE="text" NAME="Tema" VALUE="<?=$dados['Tema']?>">
+		
+	<BR/>Preço<BR/>
 	<INPUT TYPE="TEXT" NAME="Preço" VALUE="<?=$dados['Preco']?>">
 	
-
-
-	<BR/>Data: <?=$dados['Data']?><BR/>
+	<!-- <BR/>Data: <?=$dados['Data']?><BR/>
 	<SELECT NAME="id_Calouradas">
 		<option value="Date">Escolha uma Data</option>
 		<?php
@@ -49,12 +48,9 @@ require_once("Calouradas_funcoes.php");
 		<?php 
 		} 
 		?>
-	</SELECT>
+	</SELECT> -->
 	
-	
-	<BR/>Resumo:<BR/>
-	<textarea NAME='resumo'><?=$dados['resumo']?></textarea><br/><br/>
-	
+	<br/><br/>
 	<INPUT TYPE="submit" NAME="btn_acao" VALUE="Enviar">
 
 </FORM>

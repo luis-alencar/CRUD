@@ -1,8 +1,8 @@
 ﻿<?php
 require_once "config.php";
-require_once "livro_funcoes.php";
+require_once "Calouradas_funcoes.php";
 
-$mensagem = livro_excluir($bd,$_REQUEST['codigo_livro']);
+$mensagem = Calouradas_excluir($bd,$_REQUEST['id_Calouradas']);
 
-include "amigo_inicio.php";
+include "Calouradas_inicio.php";
 ?>

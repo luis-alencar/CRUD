@@ -25,9 +25,9 @@
 				<th>Preco</th>
 			</tr>
 		<?php
-		$result = Calouradas_listar_todas($bd);
+		$result = Calouradas_listar_todos($bd);
 		
-		while( $dados = livro_anexar_resultado($result) ){ ?>
+		while( $dados = Calouradas_anexar_resultado($result) ){ ?>
 			<tr>
 				<td><?=$dados['Atletica']?></td>
 				<td><?=$dados['Tema']?></td>

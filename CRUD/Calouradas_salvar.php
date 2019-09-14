@@ -1,8 +1,8 @@
 ﻿<?php 
 require_once "config.php";
-require_once "Calourdas_funcoes.php";
+require_once "Calouradas_funcoes.php";
 
-$dados = livro_preparar_dados($_POST);
+$dados = Calouradas_preparar_dados($_POST);
 
 $ok = Calouradas_salvar($bd,$dados);
 
