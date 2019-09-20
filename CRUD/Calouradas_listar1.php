@@ -30,17 +30,22 @@
 		$result = Calouradas_listar_todos($bd);
 		
 		while( $dados = Calouradas_anexar_resultado($result) ){ ?>
-			<tr>
+			<tr class="tabela">
 				<td><?=$dados['Atletica']?></td>
 				<td><?=$dados['Tema']?></td>
-				<td><?=$dados['Data']?></td>
+				<td><?=$dados['Data']?></td> 
 				<td><?=$dados['Hora']?></td>
-				<td><?=str_replace("\n","<br>\n",$dados['Preco'])?></td>
-				<!-- <td>
+				<td>R$&nbsp;<?=str_replace("\n","<br>\n",$dados['Preco'])?></td>
+				<td>
+				
 				<button type="button" class="btn btn-primary EDITAR">
-					<a  href='Calouradas_editar.php?codigo_Calouradas=<?=$dados['codigo_Calouradas']?>'>EDITAR </a>
+					<a  href='Calouradas_editar.php?codigo_Calouradas=<?=$dados['codigo_Calouradas']?>'>Salvar </a>
 				</button> 
-				</td> -->
+				<button type="button" class="btn btn-primary excluir">
+					<a  href='Calouradas_excluir.php?id_Calouradas=<?=$dados['id_Calouradas']?>'>Excluir </a>
+				</button> 
+				</td>
+			</tr>
 		<?php 
 		} 
 		?>

@@ -13,11 +13,11 @@ require_once("Calouradas_funcoes.php");
 </div>
 <div class="container">
 	<div class="radio-group">
-		<input type="radio" name="imagem" <?=$dados['Atletica']?> />
+		<input type="radio" name="Atletica" value="Mitologica"<?=$dados['Atletica']?> />
 		<label class="radio" id="imagem_form" for="i1"><img src="img/mitologica.png" alt=""></label>
-		<input type="radio" name="imagem" <?=$dados['Atletica']?> />
+		<input type="radio" name="Atletica" value="Sistematica"<?=$dados['Atletica']?> />
 		<label class="radio" id="imagem_form" for="i2"><img src="img/sistematica.jpg" alt=""></label>
-		<input type="radio" name="imagem" <?=$dados['Atletica']?> />
+		<input type="radio" name="Atletica" value="Civilizada"<?=$dados['Atletica']?> />
 		<label class="radio" id="imagem_form" for="i3"><img src="img/civilizada.jpg" alt=""></label>
 	</div>
 </div>
@@ -32,17 +32,20 @@ require_once("Calouradas_funcoes.php");
 	<INPUT TYPE="text" NAME="Tema" VALUE="<?=$dados['Tema']?>">
 		
 	<BR/>Preço<BR/>
-	<INPUT TYPE="TEXT" NAME="Preço" VALUE="<?=$dados['Preco']?>">
+	<INPUT TYPE="TEXT" NAME="Preco" VALUE="<?=$dados['Preco']?>">
 	
 	<!-- <BR/>Data: <?=$dados['Data']?><BR/>
 	<SELECT NAME="id_Calouradas">
 		<option value="Date">Escolha uma Data</option>
 		<?php
 		//echo "teste2:".print_r($bd,1).":";
+
 		$result_Calouradas = Calouradas_listar_todos($bd);
 		
 		while( $dados_Calouradas = Calouradas_anexar_resultado($result_Calouradas) ){ ?>
-			<OPTION VALUE=<?=$dados_Calouradas['id']?> <?=select_get_selected($dados_Calouradas['id'],$dados['Calouradas_id'])?> >
+			<OPTION VALUE=<?=$dados_Calouradas['id']?> 
+				<?=select_get_selected($dados_Calouradas['id'],
+				$dados['Calouradas_id'])?> >
 				<?=$dados_Calouradas['nome']?>
 			</OPTION>
 		<?php 

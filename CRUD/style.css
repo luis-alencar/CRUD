@@ -33,7 +33,7 @@ img{
 /* .radio-group input[type="radio"]{
     display: none;
 } */
-#imagem_form img:hover, :visited{
+#imagem_form img:hover, :visited {
     opacity:0.9;
     color: #F6F5F5;
     transform: scale(1.1);
@@ -56,7 +56,26 @@ strong{
 }
 table{
     width: 100%;
-    text-align: center;
+    border-radius: 33px 33px 0 0;
 }
-
+.content-table{
+    border-collapse: collapse;
+    margin: 25px 0;
+    min-width: 400px;
+}
+.content-table tr{
+    background-color: aliceblue;
+    color: blueviolet;
+}
+tbody{
+    background-color:blueviolet;
+}
+.content-table th,
+.content-table td{
+    padding: 10px 12px;
+}
+.excluir button a{
+    text-decoration:none;
+    color:blueviolet;
+}
 

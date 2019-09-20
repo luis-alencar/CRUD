@@ -1,6 +1,7 @@
 ﻿<?php require_once "config.php";?>
 
 <html>
+
 	<head>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
@@ -17,8 +18,8 @@
 
 	<a class="btn btn-primary" href='Calouradas_incluir.php'>Adicionar Calouradas</a><BR/><hr>
 	<a class="btn btn-primary" href='Calouradas_listar.php'>Mostrar Calouradas</a><BR/><hr>
-	<a class="btn btn-primary" href='Calouradas_editar.php'>Editar Calouradas</a><BR/><hr>
-	<a class="btn btn-primary" href='Calouradas_excluir.php'>Excluir Calouradas</a><BR/><hr>
+	<!-- <a class="btn btn-primary" href='Calouradas_editar.php'>Editar Calouradas</a><BR/><hr> -->
+	<a class="btn btn-primary" href='Calouradas_listar1.php'>Editar Calouradas</a><BR/><hr>
 	</body>
 
 </html>

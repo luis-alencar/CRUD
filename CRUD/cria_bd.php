@@ -20,12 +20,13 @@ if(!$ok){
 
 $sql = "create table Calouradas(
 	id_Calouradas INT not null auto_increment, 
-	Atletica varchar(100) not null UNIQUE,
+	Atletica varchar(50) not null,
 	Tema varchar(50) not null UNIQUE,
 	Data date null, 
-	Hora float,
+	Hora time,
 	Preco float,
 	primary key (id_Calouradas));";
+	
 $res = mysqli_query($bd, $sql);
 if(!$res){
 	printf("Erro na SQL: %s.<br/>",mysqli_error($bd)); //exit();
